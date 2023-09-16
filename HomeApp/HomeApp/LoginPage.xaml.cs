@@ -23,7 +23,7 @@ namespace HomeApp
         }
         //private void Login_Click(object sender, EventArgs e)
         //{
-        //    loginButton.Text = "Выполняется вход...";
+        //    loginButton.Text = "Выполняется вход d ...";
         //    //string xaml = "<Button Text=\"⌛ Выполняется вход..\"  />";
         //    //loginButton.LoadFromXaml(xaml);
         //}
