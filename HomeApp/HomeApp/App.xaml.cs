@@ -13,11 +13,11 @@ namespace HomeApp
 
             //MainPage = new MainPage();
             //MainPage = new LoadingPage();
-            //MainPage = new LoginPage(); 
-            //MainPage = new WelcomePage();
+            //MainPage = new LoginPage();             
             //MainPage = new NavigationPage(new LoginPage());
-
-            MainPage = new NavigationPage(new WelcomePage());
+            
+            MainPage = new WelcomePage();
+            //MainPage = new NavigationPage(new WelcomePage());
         }
 
         protected override void OnStart()
