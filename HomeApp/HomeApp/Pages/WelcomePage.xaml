@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HomeApp.Pages"
+             x:Class="HomeApp.Pages.WelcomePage">
+    <ContentPage.Content>
+        <StackLayout   VerticalOptions="Center"  HorizontalOptions="CenterAndExpand" >
+            <Label TextColor="Blue" FontSize="Medium" Text="Welcome to WeatherApp!"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="TimerButton" Text="{x:Static local:WelcomePage.TIMER_BUTTON_TEXT}" Clicked="SetTimer_Click" />
+            <Button x:Name="WeatherButton" Text="{x:Static local:WelcomePage.WEATHER_BUTTON_TEXT}" Clicked="GetWeather_Click" />
+            <Label x:Name="StatusMessage" FontSize="Small" TextColor="Gray" Text= "{x:Static local:WelcomePage.STATUS_MESSAGE_TEXT}"  />
+            <Button x:Name="TestButton" Text="Let us testing Appl" Clicked="Test_Click" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
