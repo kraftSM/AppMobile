@@ -16,6 +16,7 @@ namespace HomeApp
             //MainPage = new LoginPage(); 
             //MainPage = new WelcomePage();
             //MainPage = new NavigationPage(new LoginPage());
+
             MainPage = new NavigationPage(new WelcomePage());
         }
 
