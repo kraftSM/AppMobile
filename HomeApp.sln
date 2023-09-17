@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeApp.Android", "HomeApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeApp.iOS", "HomeApp\HomeApp.iOS\HomeApp.iOS.csproj", "{62D647EF-186A-4957-BFA6-10904BF49E49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeApp", "HomeApp\HomeApp\HomeApp.csproj", "{C7E04D90-67FC-449C-810C-0CD67EDDAC31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeApp", "HomeApp\HomeApp\HomeApp.csproj", "{C7E04D90-67FC-449C-810C-0CD67EDDAC31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +28,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C9FE1BD7-9F34-4220-B7D4-F23927713F63}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{C9FE1BD7-9F34-4220-B7D4-F23927713F63}.Debug|Any CPU.Build.0 = Debug|x64
+		{C9FE1BD7-9F34-4220-B7D4-F23927713F63}.Debug|Any CPU.Deploy.0 = Debug|x64
 		{C9FE1BD7-9F34-4220-B7D4-F23927713F63}.Debug|ARM.ActiveCfg = Debug|ARM
 		{C9FE1BD7-9F34-4220-B7D4-F23927713F63}.Debug|ARM.Build.0 = Debug|ARM
 		{C9FE1BD7-9F34-4220-B7D4-F23927713F63}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -88,7 +90,6 @@ Global
 		{399B883B-44D2-43F3-A614-A3EA4A8EA454}.Release|x86.Build.0 = Release|Any CPU
 		{399B883B-44D2-43F3-A614-A3EA4A8EA454}.Release|x86.Deploy.0 = Release|Any CPU
 		{62D647EF-186A-4957-BFA6-10904BF49E49}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
-		{62D647EF-186A-4957-BFA6-10904BF49E49}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
 		{62D647EF-186A-4957-BFA6-10904BF49E49}.Debug|Any CPU.Deploy.0 = Debug|iPhoneSimulator
 		{62D647EF-186A-4957-BFA6-10904BF49E49}.Debug|ARM.ActiveCfg = Debug|iPhoneSimulator
 		{62D647EF-186A-4957-BFA6-10904BF49E49}.Debug|ARM.Build.0 = Debug|iPhoneSimulator

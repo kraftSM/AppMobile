@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace HomeApp
+namespace HomeApp.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
@@ -15,7 +15,7 @@ namespace HomeApp
         // Константа для текста кнопки
         public const string BUTTON_TEXT = "Войти";
         // Переменная счетчика
-        public static int loginCouner = 0;
+        public static int loginCounter = 0;
        
         public LoginPage()
         {
@@ -32,26 +32,26 @@ namespace HomeApp
         /// </summary>
         private void Login_Click(object sender, EventArgs e)
         {
-            if (loginCouner == 0)
+            if (loginCounter == 0)
             {
                 // Если первая попытка - просто меняем сообщения
                 loginButton.Text = $"Выполняется вход..";
             }
-            else if (loginCouner > 5) // Слишком много попыток - показываем ошибку
+            else if (loginCounter > 5) // Слишком много попыток - показываем ошибку
             {
                 // Деактивируем кнопку
                 loginButton.IsEnabled = false;
                 // Показываем текстовое сообщение об ошибке
-                errorMessage.Text = "Слишком много попыток! Попробуйте позже.";
+                errorMessage.Text = $"Слишком много попыток! Попробуйте позже. Попыток входа: {loginCounter}";
             }
             else
             {
                 // Изменяем текст кнопки и показываем количество попыток входа
-                loginButton.Text = $"Выполняется вход...   Попыток входа: {loginCouner}";
+                loginButton.Text = $"Выполняется вход...   Попыток входа: {loginCounter}";
             }
 
             // Увеличиваем счетчик
-            loginCouner += 1;
+            loginCounter += 1;
         }
     }
 }
