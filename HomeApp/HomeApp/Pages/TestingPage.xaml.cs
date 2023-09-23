@@ -16,5 +16,14 @@ namespace HomeApp.Pages
         {
             InitializeComponent();
         }
+        
+        private void TabPage_Click(object sender, EventArgs e)
+        {
+            //StatusMessage.Text = $" Testig_Click data  in progress...";
+            //App.Current.MainPage = new TestingPage();
+            Navigation.PushAsync(new TabPage());
+
+        }
+
     }
 }

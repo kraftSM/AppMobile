@@ -5,6 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Welcome to TestingPage!" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="TabPageButton" Text="To Tab Page" Clicked="TabPage_Click" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

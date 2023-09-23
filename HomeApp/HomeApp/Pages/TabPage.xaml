@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HomeApp.Pages.TabPage">
+  <!--Pages can be added as references or inline-->
+  <ContentPage Title="Tab 1" />
+  <ContentPage Title="Tab 2" />
+  <ContentPage Title="Tab 3" >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <BoxView Color="LightBlue" Grid.Column="0" Grid.Row="0" />
+            <BoxView Color="Blue" Grid.Column="1" Grid.Row="0" />
+            <BoxView Color="DarkGray" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" />
+            <BoxView Color="DarkBlue" Grid.Column="0" Grid.Row="2"   />
+            <BoxView Color="DarkBlue" Grid.Column="1" Grid.Row="2"   />
+        </Grid>
+    </ContentPage>  
+</TabbedPage>
