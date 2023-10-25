@@ -52,8 +52,8 @@
                         Clicked="RemovePictureButton_Clicked"
                         Grid.Column="2" 
                         HorizontalOptions="FillAndExpand"/>
-        <Button Text="ClearPIN"
-                Clicked="ClearPINButton_Clicked"
+        <Button Text="Back"
+                Clicked="BackButton_Clicked"
                 Grid.Column="3" 
                 HorizontalOptions="FillAndExpand"/>
 

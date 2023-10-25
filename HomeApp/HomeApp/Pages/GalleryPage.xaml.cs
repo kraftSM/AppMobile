@@ -69,9 +69,22 @@ namespace HomeApp.Pages
             //Deselect Item
             ((ListView)sender).SelectedItem = null;
         }
-        private void ClearPINButton_Clicked(object sender, EventArgs e)
+        private async void ClearPINButton_Clicked(object sender, EventArgs e)
         {
-            Preferences.Set("Password", string.Empty);
+            var answer = await DisplayAlert("Внимание!", $"Clear PIN", "Да", "Нет");
+            if (answer == true)
+            {
+                Preferences.Set("Password", string.Empty); 
+                DisplayAlert("Внимание!", $" PIN are cleared", "OK"); 
+                
+            }
+            
+            Navigation.PopAsync(); 
+        }
+        private 
+            void BackButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
         }
         private void OpenPicrureButton_Clicked(object sender, EventArgs e)
         {
