@@ -14,7 +14,14 @@
       <!--Built in Cells-->
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding .}" />
+                    <!--<TextCell Text="{Binding .}" />-->
+                    <ImageCell
+                           ImageSource="{Binding PathToPicture}"
+                           Text="{Binding NameFile}"
+                           Detail="{Binding CreateDate}"
+                           TextColor="DodgerBlue"
+                           DetailColor="Gray">
+                    </ImageCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
       </ListView>
@@ -45,6 +52,10 @@
                         Clicked="RemovePictureButton_Clicked"
                         Grid.Column="2" 
                         HorizontalOptions="FillAndExpand"/>
+        <Button Text="ClearPIN"
+                Clicked="ClearPINButton_Clicked"
+                Grid.Column="3" 
+                HorizontalOptions="FillAndExpand"/>
 
         </Grid>
     </StackLayout>

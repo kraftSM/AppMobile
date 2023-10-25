@@ -11,6 +11,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 using HomeApp.Models;
+using Xamarin.Essentials;
 
 namespace HomeApp.Pages
 {
@@ -19,7 +20,8 @@ namespace HomeApp.Pages
     {
         //public ObservableCollection<string> Items { get; set; }
 
-        string path = @"/storage/emulated/0/DCIM/Camera/";
+        //string path = @"/storage/emulated/0/DCIM/Camera/";
+        string path = @"/storage/emulated/0/Pictures/";
         private ObservableCollection<PicInfo> _pictureList { get; set; }
         private PicInfo _currentPicture;
         public GalleryPage()
@@ -67,7 +69,10 @@ namespace HomeApp.Pages
             //Deselect Item
             ((ListView)sender).SelectedItem = null;
         }
-
+        private void ClearPINButton_Clicked(object sender, EventArgs e)
+        {
+            Preferences.Set("Password", string.Empty);
+        }
         private void OpenPicrureButton_Clicked(object sender, EventArgs e)
         {
             if (pictureList.SelectedItem is null)
