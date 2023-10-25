@@ -4,8 +4,8 @@
              xmlns:local="clr-namespace:HomeApp.Pages"
              x:Class="HomeApp.Pages.TimerPage">
     <ContentPage.Content>
-        <StackLayout x:Name="stackLayout" BackgroundColor="LightGray" Padding="30,10">
-            <Label Text="Welcome to Timer Page!"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+        <StackLayout x:Name="stackLayout" BackgroundColor="LightGray" Padding="30,10" HorizontalOptions="CenterAndExpand" VerticalOptions ="StartAndExpand" >
+            <Label Text="Setting Timer Page!" Style="{DynamicResource TitleStyle}"  />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
