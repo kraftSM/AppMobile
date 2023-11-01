@@ -20,8 +20,8 @@ namespace HomeApp.Pages
     {
         //public ObservableCollection<string> Items { get; set; }
 
-        //string path = @"/storage/emulated/0/DCIM/Camera/";
-        string path = @"/storage/emulated/0/Pictures/";
+        string path = @"/storage/emulated/0/DCIM/Camera/";
+        //string path = @"/storage/emulated/0/Pictures/";
         private ObservableCollection<PicInfo> _pictureList { get; set; }
         private PicInfo _currentPicture;
         public GalleryPage()
@@ -64,21 +64,22 @@ namespace HomeApp.Pages
             if (e.Item == null)
                 return;
 
-            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
+            //await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
 
-            //Deselect Item
-            ((ListView)sender).SelectedItem = null;
+            ////Deselect Item
+            //((ListView)sender).SelectedItem = null;
         }
-        private async void ClearPINButton_Clicked(object sender, EventArgs e)
+        
+        //now this option inactive
+        private async void ClearPINButton_Clicked(object sender, EventArgs e)            
         {
             var answer = await DisplayAlert("Внимание!", $"Clear PIN", "Да", "Нет");
             if (answer == true)
             {
-                Preferences.Set("Password", string.Empty); 
-                DisplayAlert("Внимание!", $" PIN are cleared", "OK"); 
-                
+                //Preferences.Set("Password", string.Empty); 
+                //DisplayAlert("Внимание!", $" PIN are cleared", "OK");
+                DisplayAlert("Внимание!", $" PIN clearing inactive", "OK");
             }
-            
             Navigation.PopAsync(); 
         }
         private 

@@ -44,11 +44,11 @@
     <Grid ColumnDefinitions="Auto" 
                   RowDefinitions="45"
                   Margin="10,15">
-        <Button Text="Открыть"
+        <Button Text="Open"
                         Clicked="OpenPicrureButton_Clicked"
                         Grid.Column="1" 
                         HorizontalOptions="FillAndExpand"/>
-        <Button Text="❌Удалить"
+        <Button Text="❌Del"
                         Clicked="RemovePictureButton_Clicked"
                         Grid.Column="2" 
                         HorizontalOptions="FillAndExpand"/>
@@ -56,6 +56,10 @@
                 Clicked="BackButton_Clicked"
                 Grid.Column="3" 
                 HorizontalOptions="FillAndExpand"/>
+        <!--<Button Text="Clr PIN"
+                Clicked="ClearPINButton_Clicked"
+                Grid.Column="4" 
+                HorizontalOptions="FillAndExpand"/>-->
 
         </Grid>
     </StackLayout>
